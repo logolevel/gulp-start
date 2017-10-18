@@ -1,0 +1,51 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+
+* {
+	box-sizing: border-box;
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+*::-webkit-input-placeholder{
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+/*our styles*/
+html, body {
+	// height: 100%;
+	font-size: 16px;
+}
+
+body {
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	opacity: 1;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/*main styles*/
+
+
+
+@import "media";
