@@ -1,6 +1,7 @@
 @import "fonts";
 @import "libs";
 @import "vars";
+@import "_mixins/font-size";
 
 * {
 	box-sizing: border-box;
@@ -10,24 +11,23 @@
 }
 
 *::-webkit-input-placeholder{
-	color: #666;
+	color: #ddd;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #ddd;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #ddd;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #ddd;
 	opacity: 1;
 }
 /*our styles*/
-html, body {
-	// height: 100%;
+html {
 	font-size: 16px;
 }
 
@@ -46,6 +46,8 @@ body {
 }
 /*main styles*/
 
-
+p {
+	@include fontSize(16px);
+}
 
 @import "media";
